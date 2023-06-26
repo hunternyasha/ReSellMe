@@ -1,0 +1,516 @@
+body,
+html {
+  overflow-x: hidden;
+}
+// *** Fonts *** //
+
+@font-face {
+  font-family: "Cera";
+  src: url("./assets/fonts/CeraPro.otf");
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("./assets/fonts/Avenir.otf");
+}
+@font-face {
+  font-family: "AvenirBold";
+  src: url("./assets/fonts/AvenirBold.otf");
+}
+
+// *** End *** //
+.sticky-top {
+  box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.8);
+}
+// *** Banner *** //
+.banner {
+  background-image: url("./assets/img/img1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #011e55;
+  width: 100%;
+  padding: 0 0 20% 0;
+  .outerBanner {
+    margin-top: 5%;
+    .innerBanner {
+      h1 {
+        font-family: "Cera";
+        font-weight: 900;
+        font-size: 90px;
+        line-height: 113px;
+        color: white;
+        padding: 0 15%;
+      }
+      p {
+        font-family: "Avenir";
+        color: white;
+        font-weight: 400;
+        font-size: 29px;
+        line-height: 35px;
+      }
+      .bannerButtons {
+        .btn {
+          background-color: white;
+          border-radius: 0;
+          border: none;
+          color: #011e55;
+          padding: 10px 40px;
+          margin-left: 10px;
+          font-family: "Cera";
+          font-weight: 900;
+          font-size: 25px;
+          line-height: 31px;
+        }
+        button:nth-child(2) {
+          background-color: #018181;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.bannerSecImg {
+  padding: 0 10%;
+  margin-top: -14%;
+}
+
+// *** End *** //
+
+// *** About *** //
+
+.about {
+  padding: 5% 0;
+  .outerAbout {
+    .innerAbout {
+      align-items: center;
+      .aboutItems {
+        color: #013d7b;
+        h2 {
+          font-family: "Cera";
+          font-weight: 900;
+          font-size: 50px;
+          line-height: 75px;
+        }
+        p {
+          font-family: "Avenir";
+          color: #013d7b;
+          font-weight: 400;
+          font-size: 20px;
+          span {
+            font-family: "AvenirBold";
+          }
+        }
+        .btn {
+          background-color: #013d7b;
+          border-radius: 0;
+          border: none;
+          color: white;
+          padding: 10px 40px;
+          font-family: "Cera";
+          font-weight: 900;
+          font-size: 25px;
+          line-height: 31px;
+        }
+      }
+    }
+    .aboutItems:nth-child(1) {
+      button {
+        display: none;
+      }
+    }
+  }
+}
+// *** End *** //
+
+// *** Get Started *** //
+.getStarted {
+  .outerGetStart {
+    .innerGetStart {
+      .GetStartedItems {
+        .card {
+          background-color: #011e55;
+          padding: 10% 0;
+          img {
+            width: 121px;
+            height: auto;
+          }
+          .card-body {
+            h5 {
+              font-family: "Cera";
+              font-style: normal;
+              font-weight: 900;
+              font-size: 30px;
+              line-height: 54px;
+              color: white;
+            }
+            p {
+              margin: 0;
+              font-family: "Avenir";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 26px;
+              text-align: center;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+      .GetStartedItems:nth-child(1) {
+        .card {
+          padding-bottom: 68px;
+        }
+      }
+      .GetStartedItems:nth-child(3) {
+        .card {
+          img {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+    .btn {
+      background-color: #013d7b;
+      border-radius: 0;
+      border: none;
+      color: white;
+      padding: 10px 138px;
+      font-family: "Cera";
+      font-weight: 900;
+      font-size: 25px;
+      line-height: 31px;
+    }
+  }
+}
+
+// *** End *** //
+
+// *** Our Features *** //
+.ourFeatures {
+  padding: 10% 0;
+  .outerFeatures {
+    .innerFeatures {
+      .featuresItems {
+        h2 {
+          font-family: "Cera";
+          font-weight: 900;
+          font-size: 50px;
+          line-height: 75px;
+          color: #003f74;
+        }
+        p {
+          font-family: "Avenir";
+          color: #003f74;
+          font-weight: 400;
+          font-size: 20px;
+        }
+        .card-title {
+          font-family: "Cera";
+          font-weight: 900;
+          font-size: 25px;
+          line-height: 44px;
+          color: #003f74;
+        }
+        .card-text {
+          font-family: "Avenir LT Std";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 29px;
+          color: #003f74;
+        }
+        .circle {
+          img {
+            width: 20%;
+          }
+        }
+      }
+    }
+  }
+}
+// *** End *** //
+
+// *** Re Sell Cases *** //
+
+.reCases {
+  background-color: #f8f8f8;
+  padding: 7% 0;
+  .outerReCases {
+    h2 {
+      font-family: "Cera";
+      font-weight: 900;
+      font-size: 50px;
+      line-height: 75px;
+      color: #003f74;
+    }
+    .innerReCases {
+      .reCasesItems {
+        .card {
+          background-color: #f8f8f8;
+          border: 0;
+          .card-body {
+            text-align: start;
+            .card-title {
+              font-family: "Cera";
+              font-weight: 900;
+              font-size: 25px;
+              line-height: 44px;
+              color: #003f74;
+            }
+            .card-text {
+              font-family: "Avenir LT Std";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 29px;
+              color: #003f74;
+            }
+            img {
+              width: 30%;
+            }
+          }
+        }
+        text-align: center;
+        .btn {
+          background-color: #013d7b;
+          border-radius: 0;
+          border: none;
+          color: white;
+          padding: 10px 88px;
+          font-family: "Cera";
+          font-weight: 900;
+          font-size: 25px;
+          line-height: 31px;
+        }
+      }
+      .reCasesItems:nth-child(3) {
+        .btn {
+          margin-top: 44px;
+        }
+      }
+      .reCasesItems:nth-child(4) {
+        .btn {
+          margin-top: 44px;
+        }
+      }
+      .reCasesItems:nth-child(5) {
+        .btn {
+          margin-top: 44px;
+        }
+      }
+    }
+  }
+}
+// *** End *** //
+
+// *** Tesmonials *** //
+.testmonial {
+  background: #011e55;
+  padding: 10% 0;
+  h2 {
+    font-family: "Cera";
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 75px;
+    color: white;
+  }
+  p {
+    font-family: "Avenir";
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .testimonialItem {
+    .card {
+      background: #003f74;
+      padding: 0 0 15px;
+      .card-body {
+        padding: 10px 30px 0 30px;
+        .card-title {
+          font-family: "Cera";
+          color: #ffffff;
+          font-weight: 900;
+          font-size: 30px;
+        }
+        h6 {
+          opacity: 0.5;
+          font-family: "Cera";
+          color: #ffffff;
+          font-weight: 900;
+          font-size: 20px;
+        }
+        p {
+          font-family: "Avenir";
+          font-weight: 350;
+          font-size: 20px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+// *** End *** //
+
+// *** Faq *** //
+.faq {
+  padding: 10% 0;
+  .faqItem {
+    color: #013d7b;
+    h2 {
+      font-family: "Cera";
+      font-weight: 900;
+      font-size: 50px;
+      line-height: 75px;
+    }
+    p {
+      font-family: "Avenir";
+      color: #013d7b;
+      font-weight: 400;
+      font-size: 20px;
+    }
+    .accordion {
+      .accordion-item {
+        border-bottom: 8px solid white;
+        border-radius: 5px;
+        border-left: none;
+        border-right: none;
+        .accordion-button {
+          background-color: #013d7b;
+          color: #ffffff;
+          padding: 0 15px;
+          font-family: "Cera";
+          font-weight: 900;
+          font-size: 20px;
+          text-transform: capitalize;
+        }
+        .accordion-button::after {
+          background-image: url("./assets/img/Vector\ \(4\).png");
+        }
+        .accordion-body {
+          font-family: "Avenir";
+          color: #013d7b;
+          font-weight: 400;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+// *** End *** //
+
+// *** features *** //
+.features {
+  h2 {
+    font-family: "Cera";
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 75px;
+    color: #013d7b;
+    padding: 5% 0;
+  }
+}
+.logos {
+  .outerLogos {
+    .card {
+      height: 200px;
+      padding: 0 10px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+      border-radius: 9px;
+      border: none;
+    }
+  }
+  button {
+    background-color: #003f74;
+    padding: 25px;
+    border: none;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+    .content {
+      display: none;
+    }
+
+    .active-content {
+      display: block;
+
+    }
+  
+}
+// *** End *** //
+
+// *** signUp *** //
+.signUp {
+  background-image: url("./assets/img/img1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #011e55;
+  margin: 12% 0;
+  width: 100%;
+  .innerSignUp {
+    color: #ffffff;
+    padding: 10% 0;
+    h2 {
+      font-family: "Cera";
+      font-weight: 900;
+      font-size: 50px;
+      line-height: 76px;
+    }
+    p {
+      font-family: "Avenir";
+      font-weight: 400;
+      font-size: 20px;
+    }
+    .btn {
+      background-color: white;
+      border-radius: 0;
+      border: none;
+      color: #011e55;
+      padding: 10px 40px;
+      margin-left: 10px;
+      font-family: "Cera";
+      font-weight: 900;
+      font-size: 25px;
+      line-height: 31px;
+    }
+  }
+}
+// *** End *** //
+
+// *** About *** //
+footer {
+  background: #303846;
+  padding: 5% 0 0 0;
+  margin-top: 10%;
+  .outerFooter {
+    padding: 0 0 0 13%;
+    .footerItem {
+      h3 {
+        font-family: "Cera";
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 50px;
+        color: #ffffff;
+      }
+      .active {
+        color: white;
+        font-family: "Avenir";
+        font-weight: 400;
+        font-size: 18px;
+        text-decoration: none;
+      }
+    }
+  }
+  p {
+    color: white;
+    font-family: "Avenir";
+    font-weight: 400;
+    font-size: 18px;
+    padding: 2% 0;
+  }
+}
+// *** End *** //
+
+// *** About *** //
