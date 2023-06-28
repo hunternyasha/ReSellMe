@@ -51,7 +51,7 @@ const ReSellCases = () => {
         <h2 className="pb-3">{reTitle.header}</h2>
         <div className="d-flex innerReCases ">
           {resellCards.map((sellCard) => (
-            <div className="col-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 reCasesItems" key={sellCard.id}>
+            <div className="col-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3 reCasesItems" key={sellCard.id}>
               <div className="card">
                 <div className="card-body">
                   <div className="pb-3">

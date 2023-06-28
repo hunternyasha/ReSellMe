@@ -22,6 +22,7 @@ const About = () => {
   return (
     <>
       <div className="about">
+       
         <div className="container-fluid outerAbout">
           <div className="row innerAbout">
           {aboutTitleImages.map((about)=>(

@@ -66,7 +66,7 @@ const BrandLogos = () => {
               <div className="row">
                 {logos.map((images) => (
                   <div
-                    className="col-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3"
+                    className="col-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3"
                     key={images.id}>
                     <div className="card justify-content-center">
                       <img src={images.image} alt="" className="img-fluid" />
@@ -83,7 +83,7 @@ const BrandLogos = () => {
               <div className="row">
                 {logos2.map((images) => (
                   <div
-                    className="col-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3"
+                    className="col-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3"
                     key={images.id}>
                     <div className="card justify-content-center">
                       <img src={images.image} alt="" className="img-fluid" />

@@ -35,11 +35,12 @@ const GetStartedCards = () => {
 
   return (
     <div className="getStarted">
+       <h2>How To Get Started</h2>
       <div className="container-fluid outerGetStart text-center">
         <div className="row g-5 innerGetStart">
           {getStarted.map((cards) => (
             <div
-              className="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 GetStartedItems text-center "
+              className="col-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 GetStartedItems text-center "
               key={cards.id}>
               <div className="card text-center align-items-center">
                 <img src={cards.getStartImg} alt="" className=" card-img-top" />

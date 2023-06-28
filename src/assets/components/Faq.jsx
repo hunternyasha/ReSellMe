@@ -23,12 +23,12 @@ const Faq = () => {
       <div className="faq">
         <div className="container-fluid outerFaq">
           <div className="row innerFaq">
-            <div className="col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 faqItem">
+            <div className="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 faqItem">
               <h2>{faqTitles.title}</h2>
               <p>{faqTitles.title2}</p>
               <p>{faqTitles.title3}</p>
             </div>
-            <div className="col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 faqItem">
+            <div className="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 faqItem">
               <div className="row accordionFaq">
                 <div class="accordion" id="accordion">
                   <div class="accordion-item">

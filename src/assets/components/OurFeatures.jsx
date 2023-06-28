@@ -40,11 +40,11 @@ const OurFeatures = () => {
     <div className="ourFeatures">
       <div className="container-fluid outerFeatures">
         <div className="row innerFeatures">
-          <div className="col-12 col-md-6 col-lg-6 col-xl-6 col xxl-6 featuresItems">
+          <div className="col-12 col-md-12 col-lg-12 col-xl-6 col xxl-6 featuresItems">
             <h2>{featureTitles.heading}</h2>
             <p>{featureTitles.title}</p>
           </div>
-          <div className="col-12 col-md-6 col-lg-6 col-xl-6 col xxl-6 featuresItems">
+          <div className="col-12 col-md-12 col-lg-12 col-xl-6 col xxl-6 featuresItems">
             <div className="row">
               {featureSecTitles.map((feature) => (
                 <div
