@@ -46,8 +46,6 @@ const Testimonials = () => {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
       id: 3,
     },
-  ]);
-  const [testmonCards2] = useState([
     {
       image: img2,
       image2: img4,
@@ -55,7 +53,7 @@ const Testimonials = () => {
       title2: "Company Name",
       title3:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-      id: 1,
+      id: 4,
     },
     {
       image: img5,
@@ -64,7 +62,7 @@ const Testimonials = () => {
       title2: "Company Name",
       title3:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-      id: 2,
+      id: 5,
     },
     {
       image: img1,
@@ -73,9 +71,19 @@ const Testimonials = () => {
       title2: "Company Name",
       title3:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-      id: 3,
+      id: 6,
     },
   ]);
+
+  const slideLeft = () => {
+    const slider = document.getElementById("slider");
+    slider.scrollLeft = slider.scrollLeft - 350;
+  };
+
+  const slideRight = () => {
+    const slider = document.getElementById("slider");
+    slider.scrollLeft = slider.scrollLeft + 350;
+  };
   return (
     <>
       <div className="testmonial">
@@ -86,23 +94,16 @@ const Testimonials = () => {
               <p>{testmonHead.title2}</p>
               <div className="d-flex ">
                 <button
-                  className={
-                    toggleState === 1
-                      ? "tabs active-tabs btn rounded-circle border-2 border border-light mx-3"
-                      : "tabs rounded-circle border border-2 border-light btn"
-                  }
-                  onClick={() => toggleTab(1)}
+                  className="tabs active-tabs btn rounded-circle border-2 border border-light mx-3"
+
+                  onClick={slideLeft}
                   type="button"
                   aria-label="Left">
                   <img src={arrow1} alt="" className="img-fluid" />
                 </button>
                 <button
-                  className={
-                    toggleState === 2
-                      ? "tabs active-tabs rounded-circle border border-2 border-light btn mx-3"
-                      : "tabs rounded-circle border border-2 border-light btn"
-                  }
-                  onClick={() => toggleTab(2)}
+                  className="tabs active-tabs rounded-circle border border-2 border-light btn mx-3"
+                  onClick={slideRight}
                   type="button"
                   aria-label="Right">
                   <img src={arrow} alt="" className="img-fluid" />
@@ -111,11 +112,8 @@ const Testimonials = () => {
             </div>
 
             <div className="col-12 col-md-12 col-lg-8 col-xl-6 col-xxl-6 testimonialItem">
-              <div
-                className={
-                  toggleState === 1 ? "content  active-content" : "content"
-                }>
-                <div className="d-flex">
+              <div>
+                <div className="d-flex" id="slider">
                   {testmonCards.map((testmony) => (
                     <div className="col-12 col-md-6 col-lg-6 col-xl-8 col-xxl-8">
                       <div className="card mx-1">
@@ -135,36 +133,6 @@ const Testimonials = () => {
                           <h5 className="card-title">{testmony.title}</h5>
                           <h6 className="">{testmony.title2}</h6>
                           <p className="card-text">{testmony.title3}</p>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-              <div
-                className={
-                  toggleState === 2 ? "content  active-content" : "content"
-                }>
-                <div className="d-flex">
-                  {testmonCards2.map((testmony2) => (
-                    <div className="col-12 col-md-6 col-lg-6 col-xl-8 col-xxl-8">
-                      <div className="card mx-1">
-                        <img
-                          src={testmony2.image}
-                          alt=""
-                          className="img-fluid"
-                        />
-                        <div className="commas rounded-circle">
-                          <img
-                            src={testmony2.image2}
-                            alt=""
-                            className="img-fluid"
-                          />
-                        </div>
-                        <div className="card-body">
-                          <h5 className="card-title">{testmony2.title}</h5>
-                          <h6 className="">{testmony2.title2}</h6>
-                          <p className="card-text">{testmony2.title3}</p>
                         </div>
                       </div>
                     </div>

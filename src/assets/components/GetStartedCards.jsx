@@ -1,10 +1,4 @@
 import * as React from "react";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
 import img from "../img/img4.png";
 import img2 from "../img/img5.png";
 import img3 from "../img/img6.png";

@@ -365,7 +365,11 @@ header {
       color: #003f74;
     }
     .innerReCases {
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+      padding: 2% 0;
       .reCasesItems {
+
         .card {
           background-color: #f8f8f8;
           border: 0;
@@ -421,6 +425,11 @@ header {
       }
     }
   }
+  .buttons{
+    .btn :focus{
+      color: transparent;
+    }
+  }
 }
 
 /* ------------------------------
@@ -444,6 +453,11 @@ header {
     // margin-right: 100px;
   }
   .testimonialItem {
+    .d-flex{
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+      padding-right: 50px;
+    }
     .card {
       background: #003f74;
       padding: 0 0 15px;
@@ -568,14 +582,12 @@ header {
     margin-left: 20px;
     margin-right: 20px;
   }
+.logoImgs{
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  padding: 3% 0;
+}
 
-  .content {
-    display: none;
-  }
-
-  .active-content {
-    display: block;
-  }
 }
 /* ------------------------------
   10. Sign Up
@@ -839,6 +851,11 @@ footer {
       font-size: 40px;
     }
     .testimonialItem {
+      #slider{
+        overflow-x: scroll;
+        display: flex;
+        scroll-behavior: smooth;
+      }
       .card {
         background: #003f74;
         padding: 0 0 15px;
@@ -1293,6 +1310,330 @@ footer {
           font-family: "Avenir";
           font-weight: 400;
           font-size: 18px;
+          text-decoration: none;
+        }
+      }
+    }
+    p {
+      color: white;
+      font-family: "Avenir";
+      font-weight: 400;
+      font-size: 18px;
+      padding: 2% 0;
+    }
+  }
+}
+
+@media (min-width: 768px )and (max-width: 1024px) {
+  // *  Banner  * //
+  .banner {
+    .outerBanner {
+      .innerBanner {
+        h1 {
+          font-size: 50px;
+          padding: 0;
+          line-height: 1.2;
+        }
+        p {
+          font-family: "Avenir";
+          color: white;
+          font-weight: 400;
+          font-size: 29px;
+          line-height: 35px;
+        }
+        .bannerButtons {
+          .btn {
+            margin: 0 0 20px 0;
+          }
+          button:nth-child(2) {
+            padding: 10px 50px;
+          }
+        }
+      }
+    }
+  }
+
+  .bannerSecImg {
+    padding: 0;
+    margin-top: -14%;
+  }
+  // *  About  * //
+  .about {
+    padding: 20% 0;
+    .outerAbout {
+      .innerAbout {
+        align-items: center;
+        .aboutItems {
+          text-align: center;
+          h2 {
+            font-family: "Cera";
+            font-weight: 900;
+            font-size: 40px;
+            line-height: 1;
+          }
+          p {
+            font-family: "Avenir";
+            color: #013d7b;
+            font-weight: 400;
+            font-size: 20px;
+            span {
+              font-family: "AvenirBold";
+            }
+          }
+          .btn {
+            background-color: #013d7b;
+            border-radius: 0;
+            border: none;
+            color: white;
+            padding: 10px 40px;
+            font-family: "Cera";
+            font-weight: 900;
+            font-size: 25px;
+            line-height: 31px;
+          }
+        }
+      }
+    }
+  }
+  // *  Get Started  * //
+  .getStarted {
+    h2 {
+      font-size: 40px;
+      line-height: 1;
+    }
+    .outerGetStart {
+      .innerGetStart {
+        .GetStartedItems {
+          .card {
+            background-color: #011e55;
+            padding: 10% 0;
+            img {
+              width: 121px;
+              height: auto;
+            }
+            .card-body {
+              h5 {
+                font-family: "Cera";
+                font-style: normal;
+                font-weight: 900;
+                font-size: 30px;
+                line-height: 54px;
+                color: white;
+              }
+              p {
+                margin: 0;
+                font-family: "Avenir";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                text-align: center;
+                color: #ffffff;
+              }
+            }
+          }
+        }
+        .GetStartedItems:nth-child(1) {
+          .card {
+            padding-bottom: 68px;
+          }
+        }
+        .GetStartedItems:nth-child(3) {
+          .card {
+            img {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+      .btn {
+        display: none;
+      }
+    }
+  }
+  // * Our Features  * //
+
+  .ourFeatures {
+    .outerFeatures {
+      .innerFeatures {
+        .featuresItems {
+          text-align: center;
+          h2 {
+            font-size: 40px;
+            line-height: 1;
+          }
+          p {
+            font-family: "Avenir";
+            color: #003f74;
+            font-weight: 400;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  // * Cases  * //
+
+  // .reCases {
+  //   .outerReCases {
+  //     h2 {
+  //       line-height: 1;
+  //       font-size: 40px;
+  //       text-align: center;
+  //     }
+  //     .innerReCases {
+  //       .reCasesItems {
+  //         .btn {
+  //           background-color: #013d7b;
+  //           border-radius: 0;
+  //           border: none;
+  //           color: white;
+  //           padding: 10px 116px;
+  //           font-family: "Cera";
+  //           font-weight: 900;
+  //           font-size: 25px;
+  //           line-height: 31px;
+  //           margin: 0;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  // * Testmonial  * //
+
+  .testmonial {
+    text-align: center;
+    h2 {
+      font-size: 40px;
+    }
+    .testimonialItem {
+      .card {
+        background: #003f74;
+        padding: 0 0 15px;
+        .commas {
+          background: #d94545;
+          bottom: 94px;
+        }
+        .card-body {
+          text-align: start;
+          h6 {
+            opacity: 0.5;
+            font-family: "Cera";
+            color: #ffffff;
+            font-weight: 900;
+            font-size: 20px;
+          }
+          .card-text {
+            font-family: "Avenir";
+            font-weight: 350;
+            font-size: 20px;
+            color: #ffffff;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  // * Faq  * //
+  .faq {
+    .faqItem {
+      color: #013d7b;
+      h2 {
+        font-size: 40px;
+        text-align: center;
+      }
+      p {
+        text-align: center;
+        font-size: 20px;
+      }
+      .accordion {
+        .accordion-item {
+          .accordion-button {
+            font-size: 15px;
+          }
+          .accordion-body {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  // * Features & Logos  * //
+
+  .features {
+    h2 {
+      text-align: center;
+      font-size: 45px;
+      line-height: 1.2;
+    }
+  }
+  .logos {
+    .outerLogos {
+      .card {
+        height: 150px;
+        padding: 0 10px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+        border-radius: 9px;
+        border: none;
+      }
+    }
+    button {
+      background-color: #003f74;
+      padding: 20px;
+      border: none;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+
+  // * Sign Up  * //
+
+  .signUp {
+    text-align: center;
+    .innerSignUp {
+      color: #ffffff;
+      padding: 10% 0;
+      h2 {
+        font-family: "Cera";
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 1.2;
+      }
+      p {
+        font-family: "Avenir";
+        font-weight: 400;
+        font-size: 24px;
+      }
+      .btn {
+        background-color: white;
+      }
+    }
+  }
+  // * Sign Up  * //
+  footer {
+    background: #303846;
+    padding: 5% 0 0 0;
+    margin-top: 10%;
+    .innerFooter {
+
+    }
+    .outerFooter {
+      padding: 0 0 0 13%;
+      .footerItem {
+        h3 {
+          font-family: "Cera";
+          font-weight: 900;
+          font-size: 22px;
+          line-height: 50px;
+          color: #ffffff;
+        }
+        .active {
+          color: white;
+          font-family: "Avenir";
+          font-weight: 400;
+          font-size: 15px;
           text-decoration: none;
         }
       }
